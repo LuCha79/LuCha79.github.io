@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 将更多按钮移至标题左侧 -->
+        <div class="header">
+            <button id="more-btn" class="more-button">&#8942;</button>
+            <h1 id="app-title">To-Do List</h1>
+            <div id="current-time"></div>
+        </div>
+        <div id="more-menu" class="more-menu">
+            <button id="goto-incomplete">View Incomplete Tasks</button>
+            <button id="goto-complete">View Completed Tasks</button>
+        </div>
+        
+        <!-- 将添加任务的输入框和按钮移动到标题下方 -->
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-btn">Add</button>
+        </div>
+
+        <div id="todo-container">
+            <h2 id="incomplete-header">Incomplete</h2>
+            <ul id="incomplete-list" class="task-list">
+                <!-- 未完成任务将显示在这里 -->
+            </ul>
+            <h2 id="completed-title" class="completed-title">Completed</h2>
+            <ul id="completed-list" class="task-list">
+                <!-- 已完成任务将显示在这里 -->
+            </ul>
+        </div>
+    </div>
+    <!-- 添加页脚 -->
+    <footer>
+        <p>鹭茶© 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
